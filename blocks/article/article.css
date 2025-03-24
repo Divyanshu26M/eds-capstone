@@ -1,0 +1,64 @@
+.article-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+}
+
+.article-image {
+    overflow: hidden;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.article-image picture img {
+    height: 110%;
+    margin-bottom: 0;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+
+.article-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 3.5em 2em 2em;
+    box-sizing: border-box;
+}
+
+.article-text h1,
+.article-text h2,
+.article-text h3,
+.article-text h4,
+.article-text h5,
+.article-text h6 {
+    margin-top: 0;
+}
+
+.article-text h5 {
+    margin: 0 0 13.5px;
+}
+
+.article-text h2 {
+    font-family: var(--fontFamilySerif, "Asar", Georgia, "Times New Roman", Times, serif);
+    margin: .5em 0;
+    font-size: var(--fontSizeH2, 36px);
+    font-weight: var(--fontWeightNormal, normal);
+}
+
+.article-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.article-text a.button {
+    background-color: var(--brandPrimary, #ffea00);
+    margin: 1em 0;
+    padding: 1em 2.5em;
+    font-size: var(--fontSizeSmall, 14px);
+    font-weight: var(--fontWeightBold, 600);
+    border-radius: var(--buttonBorderRadius, 0);
+}
