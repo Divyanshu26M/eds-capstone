@@ -187,13 +187,20 @@ a.button:any-link,
 button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--brandPrimary, #ffea00);
+  background-color: yellow;
   color: black;
   text-decoration: none;
   font-size: medium;
   font-weight: bold;
-  border-radius: var(--buttonBorderRadius, 0);
+  border-radius: 4px;
   transition: background-color 0.3s ease;
+}
+
+a.button:hover,
+a.button:focus,
+button:hover,
+button:focus {
+  background-color: darkorange;
 }
 
 button:disabled,
@@ -253,12 +260,4 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
-}
-
-.default-content-wrapper h2:after {
-  border-bottom: 2px solid var(--brandPrimary, #ffea00);
-  content: "";
-  display: block;
-  padding-top: 8px;
-  width: 84px;
-}
+}		
